@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ratelimit_webapi:
+    image: ${DOCKER_REGISTRY-}ratelimitwebapi
+    build:
+      context: .
+      dockerfile: Dockerfile
